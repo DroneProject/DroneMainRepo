@@ -6,3 +6,5 @@ This is our first fully functional set of VIs. It eliminates most of the bugs th
 
 The "AR Drone + Simple nav" and "Video" VIs have to be running at the same time. You have to run "AR Drone + Simple nav" first.
 The "Global" VI connect these with sared variables.
+
+You have to use the modifies AR Drone Toolkit.
