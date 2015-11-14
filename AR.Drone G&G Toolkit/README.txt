@@ -1,4 +1,4 @@
-Description
+﻿Description
 
 	We want to use the LabVIEW IDE to create a remote control for the AR.Drone 2. We would import libraries which include prewritten VIs for basic commands. Then we add our own code and make a “smart” tool, which controls the drone.
 
@@ -6,13 +6,13 @@ Description
 Requirements:
 
 	(Software)
-	1. LabVIEW 2014 or higher (we tested in LabVIEW 2014 and 2014 SP1)
+	1. LabVIEW 2014 or higher (tested in LabVIEW 2014 and 2014 SP1)
 	2. LabVIEW Vision Development module
-	3. AR.Drone Toolkit - Beta version!!! (https://decibel.ni.com/content/docs/DOC-35691)
+	3. AR.Drone Toolkit - Beta version (1.0.36)!!! (https://decibel.ni.com/content/docs/DOC-35691)
 
 	(Hardware)
-	1. PC running on Windows 7 or higher
-	2. WiFi conectivity
+	1. PC running on Windows 7 or higher (tested on Win10)
+	2. WiFi connectivity
 	3. XBox 360 Controller (we used a PS3 Controller using an emulator) - you have to install the proper drivers!
 	4. Parrot AR.Drone 2.0
 
@@ -40,3 +40,7 @@ Demo Videos
 	
 	https://www.youtube.com/watch?v=XA508uYLoWA
 	https://www.youtube.com/watch?v=MN7B-gMkJrs
+
+Known issues:
+	
+	
