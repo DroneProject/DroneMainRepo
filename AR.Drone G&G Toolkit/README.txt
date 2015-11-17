@@ -30,6 +30,12 @@ Instructions:
 	We have also included some VIs which can run without a secondary VI - check the "Other VIs" folder
 
 
+Known issues:
+
+	1.
+	2.
+
+
 Project Team Members
 
 	Gergő Papp-Szentannai
