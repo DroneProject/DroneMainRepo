@@ -16,8 +16,8 @@
 			<Item Name="OCR Control.vi" Type="VI" URL="../Source/OCR Control.vi"/>
 			<Item Name="Simple Video.vi" Type="VI" URL="../Source/Simple Video.vi"/>
 		</Item>
-		<Item Name="2D&amp;3D Plots &amp; Waweforms.vi" Type="VI" URL="../Source/Other VIs/2D&amp;3D Plots &amp; Waweforms.vi"/>
 		<Item Name="AR.Drone MAIN.vi" Type="VI" URL="../Source/AR.Drone MAIN.vi"/>
+		<Item Name="Sensor data visualisation.vi" Type="VI" URL="../Source/Other VIs/Sensor data visualisation.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3DPC_SurfacePlot.xctl" Type="XControl" URL="/&lt;vilib&gt;/Native 3D Graph/xcontrol/3DPC_SurfacePlot.xctl"/>
@@ -171,50 +171,6 @@
 			<Item Name="XY Plot.vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/XY Plot.vi"/>
 			<Item Name="Yaw adjust (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Yaw adjust (SubVI).vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="My Application" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{C08A8D41-286D-4140-A575-8A4A16C3EDCB}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{65291B8C-F14B-4E71-9A08-123D49726402}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{51564BB6-B2CE-450C-BD0D-EACE32E114EA}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">My Application</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/My Application</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{0B64E01C-9C9F-4DD9-B2F5-53804157DB27}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/Application.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/My Application/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5264EBDB-7D71-404E-8346-351F8888AC41}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AR.Drone MAIN.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/2D&amp;3D Plots &amp; Waweforms.vi</Property>
-				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">My Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">My Application</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 </Property>
-				<Property Name="TgtF_productName" Type="Str">My Application</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{71F298B3-A900-4F98-AC60-5E294340DDEB}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
