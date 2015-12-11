@@ -1,16 +1,20 @@
 # DroneRepo
 ###LabVIEW Drone Project 2015
 
+
+
 ##Description
 This project has two main goals:
 to create a fully functional remote control for the Parrot AR.Drone 2.0 using LabVIEW.
 to implement autonomous behavior by processing the images coming from the drone's cameras.
 
-##Specification
+####Specification
 - <a href="https://www.dropbox.com/s/7estgierg64nhdo/Spec.docx?dl=0">Spec.docx</a>
 
-##Trello Board
+####Trello Board
 - https://trello.com/b/WZzVkUko/drone-project
+
+
 
 ##Requirements:
 ###(Software)
@@ -24,6 +28,8 @@ to implement autonomous behavior by processing the images coming from the drone'
   3. Xbox 360 Controller* (we used a PS3 Controller using an emulator) - you have to install the proper drivers!
   4. Parrot AR.Drone 2.0
 *optional - you can also use the keyboard, but using the controller is easier
+
+
 
 ##Instructions
   1. Connect to your AR.Drone from your OS over WiFi (same as connecting to a public hotspot); the drone will have the name ardrone-123456 or similar.
@@ -94,6 +100,8 @@ to implement autonomous behavior by processing the images coming from the drone'
 4. The only command available in Automatic mode is forced Hover (Button A on the controller, or key H on the keyboard).
 5. To land or to regain control over the drone you have to reactivate the Manual button on the front panel.
 
+
+
 ####Available autonomous capabilities:
 1. OCR Control
   - Navigate to the Black&White tab on the video panel.
@@ -111,6 +119,8 @@ to implement autonomous behavior by processing the images coming from the drone'
   - Deactivate the Manual button.
   - The drone can be lightly pushed in any direction, so that you will see how it stabilizes itself again.
 
+
+
 ##Known issues:
 1. The UDP connection sometimes fails - the drone might become uncontrollable for a few seconds
  - SOLUTION: Restart the MAIN.vi. If LabVIEW freezes, then forcibly close and restart LabVIEW as well. Someone should hold the drone in one place until the connection is reestablished, as its behavior cannot be anticipated in these situations.
@@ -120,6 +130,8 @@ to implement autonomous behavior by processing the images coming from the drone'
  - SOLUTION: This issue cannot be resolved by the user. All you can do is to simply ignore it, as it does not affect the functioning of any VI.
 4. The controller may not get recognized automatically by LabVIEW.
  - SOLUTION: Plug in the controller into another USB port. Make sure that Windows recognizes the controller (Control Panel >>> Hardware and Sound >>> View devices and printers). Restart the MAIN.vi. !
+
+
 
 ###Project Team Members
 - Papp-Szentannai Gergő
