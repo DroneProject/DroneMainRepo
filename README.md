@@ -36,6 +36,27 @@ to implement autonomous behavior by processing the images coming from the drone'
     - other settings can remain on the default values, based on our testing this values make it easy enough to control the drone either with a keyboard or with a controller
     - the Adjustments panel and the Reset OCR button are specific to some Secondary VIs, therefore they don't need to be touched at the moment
   6. Select Secondary VI - this VI will run in the background and will manage the video processing and some features of the Autonomous flight
+  <table border="1" class="jiveBorder" style="border: 1px solid #c6c6c6; width: 100%;">
+<tbody>
+<tr><th style="text-align: left; background-color: #f2f2f2; color: #505050; padding: 6px;" valign="middle"><strong>Secondary VI Name<br /></strong></th><th style="text-align: left; background-color: #f2f2f2; color: #505050; padding: 6px;" valign="middle"><strong>Camera to use<br /></strong></th></tr>
+<tr>
+<td style="padding: 6px;">Simple Video.vi</td>
+<td style="padding: 6px;">Front or Bottom Camera (your choice)</td>
+</tr>
+<tr>
+<td style="padding: 6px;">Auto Hovering with Position Prediction.vi</td>
+<td style="padding: 6px;">Bottom Camera</td>
+</tr>
+<tr>
+<td style="padding: 6px;">Circle detection.vi</td>
+<td style="padding: 6px;">Front Camera</td>
+</tr>
+<tr>
+<td style="padding: 6px;">OCR Control.vi</td>
+<td style="padding: 6px;">Front Camera</td>
+</tr>
+</tbody>
+</table>
   7. Run MAIN.vi
 
 ###To be checked before take-off:
@@ -103,3 +124,10 @@ to implement autonomous behavior by processing the images coming from the drone'
 ###Project Team Members
 - Papp-Szentannai Gergő
 - Kovács Gellért
+
+###Demo videos
+<ul>
+<li><a href="http://https//www.youtube.com/watch?v=VW7FCKOND3c">Full demo video</a>​</li>
+<li><a href="https://www.youtube.com/watch?v=XA508uYLoWA">Simple demo</a>​</li>
+<li><a href="http://https//www.youtube.com/watch?v=MN7B-gMkJrs" style="text-decoration: underline;">OCR Control</a></li>
+</ul>
