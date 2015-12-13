@@ -19,6 +19,7 @@
 		</Item>
 		<Item Name="Sensor data visualisation.vi" Type="VI" URL="../Source/Other VIs/Sensor data visualisation.vi"/>
 		<Item Name="AR.Drone MAIN.vi" Type="VI" URL="../Source/AR.Drone MAIN.vi"/>
+		<Item Name="README.txt" Type="Document" URL="../Source/README.txt"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3DPC_SurfacePlot.xctl" Type="XControl" URL="/&lt;vilib&gt;/Native 3D Graph/xcontrol/3DPC_SurfacePlot.xctl"/>
@@ -118,6 +119,9 @@
 				<Item Name="Write BMP File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP File.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 				<Item Name="Decode20Video.dll" Type="Document" URL="/&lt;vilib&gt;/LVH/AR Drone Toolkit/Decode Video/2.0/Decode20Video.dll"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
+				<Item Name="LMH-Toolbox.lvlib" Type="Library" URL="/&lt;vilib&gt;/MakerHub/Toolbox/LMH-Toolbox.lvlib"/>
 			</Item>
 			<Item Name="3D(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/3D(SubVI).vi"/>
 			<Item Name="Auto controll (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Auto controll (SubVI).vi"/>
@@ -190,19 +194,18 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{80B54CC1-7483-4F82-A9D9-FA0F62C5D2E5}</Property>
-				<Property Name="Bld_version.build" Type="Int">14</Property>
+				<Property Name="Bld_version.build" Type="Int">19</Property>
 				<Property Name="Bld_version.major" Type="Int">4</Property>
 				<Property Name="Bld_version.minor" Type="Int">3</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AR.Drone Controller.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Controller/AR.Drone Controller.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Controller/data</Property>
-				<Property Name="Destination[2].destName" Type="Str">Drone Pictures</Property>
-				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/Controller/Drone Pictures</Property>
-				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{319E7CBF-20D9-4D3C-AF46-6F0B8188488B}</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{E1AED242-2FB6-4E6D-9EE3-97159B60DDD6}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AR.Drone MAIN.vi</Property>
@@ -258,7 +261,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BF5EB4CB-A56A-4BCD-9FE5-2CB52A4CD614}</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">11</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Sensor data visualisation.exe</Property>
@@ -348,11 +351,12 @@
 				<Property Name="INST_buildSpecName" Type="Str">My Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
 				<Property Name="INST_productName" Type="Str">AR.Drone LabVIEW Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">1.0.6</Property>
+				<Property Name="INST_productVersion" Type="Str">1.1.11</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">14018013</Property>
 				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
 				<Property Name="MSI_arpContact" Type="Str">Gergo Papp-Szentannai</Property>
+				<Property Name="MSI_arpURL" Type="Str">ni.com</Property>
 				<Property Name="MSI_distID" Type="Str">{A2868E75-5FF0-49CD-8A40-BED56AEA4ABB}</Property>
 				<Property Name="MSI_osCheck" Type="Int">4</Property>
 				<Property Name="MSI_upgradeCode" Type="Str">{05E553D8-AAB8-4F55-8F9E-3720A329E2EA}</Property>
@@ -363,6 +367,7 @@
 				<Property Name="RegDest[0].parentTag" Type="Str">2</Property>
 				<Property Name="RegDestCount" Type="Int">1</Property>
 				<Property Name="Source[0].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
+				<Property Name="Source[0].File[0].attributes" Type="Int">516</Property>
 				<Property Name="Source[0].File[0].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
 				<Property Name="Source[0].File[0].name" Type="Str">AR.Drone Controller.exe</Property>
 				<Property Name="Source[0].File[0].Shortcut[0].destIndex" Type="Int">0</Property>
@@ -370,6 +375,9 @@
 				<Property Name="Source[0].File[0].Shortcut[0].subDir" Type="Str">AR.Drone LabVIEW Controller</Property>
 				<Property Name="Source[0].File[0].ShortcutCount" Type="Int">1</Property>
 				<Property Name="Source[0].File[0].tag" Type="Str">{1DC22BCB-4F58-4EF0-953F-E2C438A5E135}</Property>
+				<Property Name="Source[0].File[1].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
+				<Property Name="Source[0].File[1].name" Type="Str">README.txt</Property>
+				<Property Name="Source[0].File[1].tag" Type="Ref">/My Computer/README.txt</Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
 				<Property Name="Source[0].name" Type="Str">Controller</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Controller</Property>
@@ -386,7 +394,12 @@
 				<Property Name="Source[1].name" Type="Str">Sensor_specs</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build Specifications/Sensor_specs</Property>
 				<Property Name="Source[1].type" Type="Str">EXE</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="Source[2].attributes" Type="Int">1</Property>
+				<Property Name="Source[2].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
+				<Property Name="Source[2].name" Type="Str">README.txt</Property>
+				<Property Name="Source[2].tag" Type="Ref">/My Computer/README.txt</Property>
+				<Property Name="Source[2].type" Type="Str">File</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 		</Item>
 	</Item>
