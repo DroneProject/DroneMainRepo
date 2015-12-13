@@ -139,7 +139,7 @@ to implement autonomous behavior by processing the images coming from the drone'
 
 ###Demo videos
 <ul>
-<li><a href="http://https//www.youtube.com/watch?v=VW7FCKOND3c">Full demo video</a>​</li>
+<li><a href="http://www.youtube.com/watch?v=VW7FCKOND3c">Full demo video</a>​</li>
 <li><a href="https://www.youtube.com/watch?v=XA508uYLoWA">Simple demo</a>​</li>
-<li><a href="http://https//www.youtube.com/watch?v=MN7B-gMkJrs" style="text-decoration: underline;">OCR Control</a></li>
+<li><a href="http://www.youtube.com/watch?v=MN7B-gMkJrs" style="text-decoration: underline;">OCR Control</a></li>
 </ul>
