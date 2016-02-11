@@ -28,6 +28,7 @@ Requirements:
 		1.LabVIEW 2014 or higher (tested in LabVIEW 2014 and 2014 SP1)
 		2.LabVIEW Vision Development Module 2015
 		3.AR.Drone Toolkit - Beta version (1.0.36)
+		4.Makerhub Toolbox (available for free in VIPM)
 	*These are automatically installed if you use the installer. Otherwise you have to manually install them.
 		
 	(Hardware)
@@ -53,9 +54,9 @@ Instructions
 	6.Select Secondary VI - this VI will run in the background and will manage the video processing and some features of the Autonomous flight
 	
 		Secondary VI Name:							|	Camera to use:
-		--------------------------------------------+--------------------------------------------
+		------------------------------------------------------------------------+--------------------------------------------
 		Simple Video.vi								|	Front or Bottom Camera (your choice)
-		Auto Hovering with Position Prediction.vi	|	Bottom Camera
+		Auto Hovering with Position Prediction.vi				|	Bottom Camera
 		Circle detection.vi							|	Front Camera
 		OCR Control.vi								|	Front Camera
 	
