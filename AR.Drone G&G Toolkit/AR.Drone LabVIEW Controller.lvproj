@@ -1,5 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="14008000">
+	<Property Name="CCSymbols" Type="Str"></Property>
+	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -18,12 +21,96 @@
 			<Item Name="Simple Video.vi" Type="VI" URL="../Source/Simple Video.vi"/>
 		</Item>
 		<Item Name="Kinect Extention" Type="Folder">
-			<Item Name="Kinect MAIN.vi" Type="VI" URL="../Source/Kinect Extention/Kinect MAIN.vi"/>
+			<Item Name="Kinect - local" Type="Folder">
+				<Item Name="Kinect MAIN.vi" Type="VI" URL="../Source/Kinect Extention/Kinect MAIN.vi"/>
+				<Item Name="Kinect - Hover (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Hover (SubVI).vi"/>
+				<Item Name="Kinect - Weak detect (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Weak detect (SubVI).vi"/>
+				<Item Name="Kinect - Control Cluster (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Control Cluster (SubVI).vi"/>
+				<Item Name="Kinect - Land (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Land (SubVI).vi"/>
+			</Item>
+			<Item Name="Kinect - integration" Type="Folder">
+				<Item Name="Land or Take Off(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Land or Take Off(SubVI).vi"/>
+				<Item Name="Kinect Controls Overwrite(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect Controls Overwrite(SubVI).vi"/>
+				<Item Name="Control Cluster(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Control Cluster(SubVI).vi"/>
+				<Item Name="Set Cluster variables(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Set Cluster variables(SubVI).vi"/>
+			</Item>
 			<Item Name="Kinect Global.vi" Type="VI" URL="../Source/Kinect Extention/Kinect Global.vi"/>
+		</Item>
+		<Item Name="Resources" Type="Folder">
+			<Item Name="Auto Hovering with Position Prediction" Type="Folder">
+				<Item Name="Automatic Control" Type="Folder">
+					<Item Name="Calc Pitch&amp;Roll.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Calc Pitch&amp;Roll.vi"/>
+					<Item Name="Calc Pitch.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Calc Pitch.vi"/>
+					<Item Name="Calc Roll.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Calc Roll.vi"/>
+					<Item Name="cm-pixel(SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/cm-pixel(SubVI).vi"/>
+					<Item Name="Keep position above object.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Keep position above object.vi"/>
+					<Item Name="Position prediction.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Position prediction.vi"/>
+					<Item Name="Send Commands(SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Send Commands(SubVI).vi"/>
+				</Item>
+				<Item Name="Video Tools" Type="Folder">
+					<Item Name="Extract Rectangle Values(SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Video Tools/Extract Rectangle Values(SubVI).vi"/>
+					<Item Name="OF (SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Video Tools/OF (SubVI).vi"/>
+					<Item Name="To B&amp;W, Remove Particle (Main SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Video Tools/To B&amp;W, Remove Particle (Main SubVI).vi"/>
+				</Item>
+			</Item>
+			<Item Name="Circle Detection" Type="Folder">
+				<Item Name="Draw Circle(SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Draw Circle(SubVI).vi"/>
+				<Item Name="Pitch(SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Pitch(SubVI).vi"/>
+				<Item Name="Vspeed adjust (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Vspeed adjust (SubVI).vi"/>
+				<Item Name="Yaw adjust (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Yaw adjust (SubVI).vi"/>
+				<Item Name="Auto controll (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Auto controll (SubVI).vi"/>
+				<Item Name="Circle detect Auto Flight (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Circle detect Auto Flight (SubVI).vi"/>
+			</Item>
+			<Item Name="OCR" Type="Folder">
+				<Item Name="Controller VI.vi" Type="VI" URL="../Source/Resources/OCR/Controller VI.vi"/>
+				<Item Name="Down Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Down Cmd Detect (SubVI).vi"/>
+				<Item Name="Land Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Land Cmd Detect (SubVI).vi"/>
+				<Item Name="Left Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Left Cmd Detect (SubVI).vi"/>
+				<Item Name="Right Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Right Cmd Detect (SubVI).vi"/>
+				<Item Name="Up Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Up Cmd Detect (SubVI).vi"/>
+				<Item Name="all_strings.abc" Type="Document" URL="../Source/Resources/OCR/all_strings.abc"/>
+				<Item Name="Command Detect Time (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Command Detect Time (SubVI).vi"/>
+			</Item>
+			<Item Name="Others" Type="Folder">
+				<Item Name="PS3 Controller" Type="Folder">
+					<Item Name="Connect to PS3 Controller.vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Connect to PS3 Controller.vi"/>
+					<Item Name="Control Inputs (SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Control Inputs (SubVI).vi"/>
+					<Item Name="Debouncing Button(SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Debouncing Button(SubVI).vi"/>
+					<Item Name="Error Correction (SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Error Correction (SubVI).vi"/>
+					<Item Name="PS3 Controller.vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/PS3 Controller.vi"/>
+					<Item Name="Remove error (SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Remove error (SubVI).vi"/>
+				</Item>
+				<Item Name="Video Acquisition" Type="Folder">
+					<Item Name="Decode Video (SubVI).vi" Type="VI" URL="../Source/Resources/Others/Video Acquisition/Decode Video (SubVI).vi"/>
+					<Item Name="Get Video Stream(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Video Acquisition/Get Video Stream(SubVI).vi"/>
+					<Item Name="Setup image data.vi" Type="VI" URL="../Source/Resources/Others/Video Acquisition/Setup image data.vi"/>
+				</Item>
+				<Item Name="Keyboard" Type="Folder">
+					<Item Name="Button selection(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Button selection(SubVI).vi"/>
+					<Item Name="Connect to Keyboard.vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Connect to Keyboard.vi"/>
+					<Item Name="Keyboard Input with Sensitivity Support.vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Keyboard Input with Sensitivity Support.vi"/>
+					<Item Name="Speed Calculator.vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Speed Calculator.vi"/>
+				</Item>
+				<Item Name="Plots &amp; WFs" Type="Folder">
+					<Item Name="3D(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/3D(SubVI).vi"/>
+					<Item Name="Create Plots - 2D, 3D (SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Create Plots - 2D, 3D (SubVI).vi"/>
+					<Item Name="Create Plots(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Create Plots(SubVI).vi"/>
+					<Item Name="Display Wf(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Display Wf(SubVI).vi"/>
+					<Item Name="Graph update(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Graph update(SubVI).vi"/>
+					<Item Name="XY Plot.vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/XY Plot.vi"/>
+				</Item>
+				<Item Name="Build Picture path (SubVI).vi" Type="VI" URL="../Source/Resources/Others/Build Picture path (SubVI).vi"/>
+				<Item Name="Control cluster.ctl" Type="VI" URL="../Source/Resources/Others/Control cluster.ctl"/>
+				<Item Name="Error handler.vi" Type="VI" URL="../Source/Resources/Others/Error handler.vi"/>
+				<Item Name="Open Connection.vi" Type="VI" URL="../Source/Resources/Others/Open Connection.vi"/>
+				<Item Name="Promt user on error.vi" Type="VI" URL="../Source/Resources/Others/Promt user on error.vi"/>
+				<Item Name="G&amp;G_ARDrone_Template.png" Type="Document" URL="../Source/Resources/G&amp;G_ARDrone_Template.png"/>
+			</Item>
+			<Item Name="Global.vi" Type="VI" URL="../Source/Resources/Global.vi"/>
 		</Item>
 		<Item Name="Sensor data visualisation.vi" Type="VI" URL="../Source/Other VIs/Sensor data visualisation.vi"/>
 		<Item Name="AR.Drone MAIN.vi" Type="VI" URL="../Source/AR.Drone MAIN.vi"/>
-		<Item Name="README.txt" Type="Document" URL="../Source/README.txt"/>
+		<Item Name="README.rtf" Type="Document" URL="../Source/README.rtf"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3DPC_SurfacePlot.xctl" Type="XControl" URL="/&lt;vilib&gt;/Native 3D Graph/xcontrol/3DPC_SurfacePlot.xctl"/>
@@ -159,39 +246,8 @@
 				<Item Name="Close-Skeleton and Video.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Skeleton and Video.vi"/>
 				<Item Name="Close-Skeleton.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Skeleton.vi"/>
 				<Item Name="Close-Video.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Video.vi"/>
-				<Item Name="Decode20Video.dll" Type="Document" URL="/&lt;vilib&gt;/LVH/AR Drone Toolkit/Decode Video/2.0/Decode20Video.dll"/>
+				<Item Name="Angle Between Joints.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Angle Between Joints.vi"/>
 			</Item>
-			<Item Name="3D(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/3D(SubVI).vi"/>
-			<Item Name="Auto controll (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Auto controll (SubVI).vi"/>
-			<Item Name="Build Picture path (SubVI).vi" Type="VI" URL="../Source/Resources/Others/Build Picture path (SubVI).vi"/>
-			<Item Name="Button selection(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Button selection(SubVI).vi"/>
-			<Item Name="Calc Pitch&amp;Roll.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Calc Pitch&amp;Roll.vi"/>
-			<Item Name="Calc Pitch.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Calc Pitch.vi"/>
-			<Item Name="Calc Roll.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Calc Roll.vi"/>
-			<Item Name="Circle detect Auto Flight (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Circle detect Auto Flight (SubVI).vi"/>
-			<Item Name="cm-pixel(SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/cm-pixel(SubVI).vi"/>
-			<Item Name="Command Detect Time (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Command Detect Time (SubVI).vi"/>
-			<Item Name="Connect to Keyboard.vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Connect to Keyboard.vi"/>
-			<Item Name="Connect to PS3 Controller.vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Connect to PS3 Controller.vi"/>
-			<Item Name="Control cluster.ctl" Type="VI" URL="../Source/Resources/Others/Control cluster.ctl"/>
-			<Item Name="Control Inputs (SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Control Inputs (SubVI).vi"/>
-			<Item Name="Controller VI.vi" Type="VI" URL="../Source/Resources/OCR/Controller VI.vi"/>
-			<Item Name="Create Plots - 2D, 3D (SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Create Plots - 2D, 3D (SubVI).vi"/>
-			<Item Name="Create Plots(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Create Plots(SubVI).vi"/>
-			<Item Name="Debouncing Button(SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Debouncing Button(SubVI).vi"/>
-			<Item Name="Decode Video (SubVI).vi" Type="VI" URL="../Source/Resources/Others/Video Acquisition/Decode Video (SubVI).vi"/>
-			<Item Name="Display Wf(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Display Wf(SubVI).vi"/>
-			<Item Name="Down Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Down Cmd Detect (SubVI).vi"/>
-			<Item Name="Draw Circle(SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Draw Circle(SubVI).vi"/>
-			<Item Name="Error Correction (SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Error Correction (SubVI).vi"/>
-			<Item Name="Extract Rectangle Values(SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Video Tools/Extract Rectangle Values(SubVI).vi"/>
-			<Item Name="Get Video Stream(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Video Acquisition/Get Video Stream(SubVI).vi"/>
-			<Item Name="Global.vi" Type="VI" URL="../Source/Resources/Global.vi"/>
-			<Item Name="Graph update(SubVI).vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/Graph update(SubVI).vi"/>
-			<Item Name="Keep position above object.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Keep position above object.vi"/>
-			<Item Name="Keyboard Input with Sensitivity Support.vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Keyboard Input with Sensitivity Support.vi"/>
-			<Item Name="Land Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Land Cmd Detect (SubVI).vi"/>
-			<Item Name="Left Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Left Cmd Detect (SubVI).vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
@@ -200,22 +256,6 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="OF (SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Video Tools/OF (SubVI).vi"/>
-			<Item Name="Open Connection.vi" Type="VI" URL="../Source/Resources/Others/Open Connection.vi"/>
-			<Item Name="Position prediction.vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Position prediction.vi"/>
-			<Item Name="PS3 Controller.vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/PS3 Controller.vi"/>
-			<Item Name="Remove error (SubVI).vi" Type="VI" URL="../Source/Resources/Others/PS3 Controller/Remove error (SubVI).vi"/>
-			<Item Name="Right Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Right Cmd Detect (SubVI).vi"/>
-			<Item Name="Send Commands(SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Automatic Control/Send Commands(SubVI).vi"/>
-			<Item Name="Speed Calculator.vi" Type="VI" URL="../Source/Resources/Others/Keyboard/Speed Calculator.vi"/>
-			<Item Name="To B&amp;W, Remove Particle (Main SubVI).vi" Type="VI" URL="../Source/Resources/Auto Hovering with Position Prediction/Video Tools/To B&amp;W, Remove Particle (Main SubVI).vi"/>
-			<Item Name="Up Cmd Detect (SubVI).vi" Type="VI" URL="../Source/Resources/OCR/Up Cmd Detect (SubVI).vi"/>
-			<Item Name="Vspeed adjust (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Vspeed adjust (SubVI).vi"/>
-			<Item Name="XY Plot.vi" Type="VI" URL="../Source/Resources/Others/Plots &amp; WFs/XY Plot.vi"/>
-			<Item Name="Yaw adjust (SubVI).vi" Type="VI" URL="../Source/Resources/Circle Detection/Yaw adjust (SubVI).vi"/>
-			<Item Name="Promt user on error.vi" Type="VI" URL="../Source/Resources/Others/Promt user on error.vi"/>
-			<Item Name="Error handler.vi" Type="VI" URL="../Source/Resources/Others/Error handler.vi"/>
-			<Item Name="Setup image data.vi" Type="VI" URL="../Source/Resources/Others/Video Acquisition/Setup image data.vi"/>
 			<Item Name="Microsoft.Kinect" Type="Document" URL="Microsoft.Kinect">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -239,7 +279,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{80B54CC1-7483-4F82-A9D9-FA0F62C5D2E5}</Property>
-				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">4</Property>
 				<Property Name="Bld_version.minor" Type="Int">4</Property>
 				<Property Name="Destination[0].destName" Type="Str">AR.Drone Controller.exe</Property>
@@ -249,19 +289,39 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Controller/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DE34867F-7AD8-47FE-BEF0-DEA295161ABD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2C0E0258-186F-48AA-940A-E092628BB02F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AR.Drone MAIN.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">true</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Window run-time position</Property>
-				<Property Name="Source[1].properties[1].value" Type="Str">Maximized</Property>
+				<Property Name="Source[1].properties[1].value" Type="Str">Unchanged</Property>
+				<Property Name="Source[1].properties[10].type" Type="Str">Show fp when called</Property>
+				<Property Name="Source[1].properties[10].value" Type="Bool">false</Property>
+				<Property Name="Source[1].properties[11].type" Type="Str">Window behavior</Property>
+				<Property Name="Source[1].properties[11].value" Type="Str">Default</Property>
+				<Property Name="Source[1].properties[12].type" Type="Str">Allow user to close window</Property>
+				<Property Name="Source[1].properties[12].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[13].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[13].value" Type="Bool">true</Property>
 				<Property Name="Source[1].properties[2].type" Type="Str">Remove front panel</Property>
 				<Property Name="Source[1].properties[2].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[3].type" Type="Str">Remove block diagram</Property>
 				<Property Name="Source[1].properties[3].value" Type="Bool">false</Property>
-				<Property Name="Source[1].propertiesCount" Type="Int">4</Property>
+				<Property Name="Source[1].properties[4].type" Type="Str">Window has title bar</Property>
+				<Property Name="Source[1].properties[4].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[5].type" Type="Str">Show menu bar</Property>
+				<Property Name="Source[1].properties[5].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[6].type" Type="Str">Show vertical scroll bar</Property>
+				<Property Name="Source[1].properties[6].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[7].type" Type="Str">Show horizontal scroll bar</Property>
+				<Property Name="Source[1].properties[7].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[8].type" Type="Str">Show toolbar</Property>
+				<Property Name="Source[1].properties[8].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[9].type" Type="Str">Show Abort button</Property>
+				<Property Name="Source[1].properties[9].value" Type="Bool">true</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">14</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -281,7 +341,16 @@
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Kinect Extention/Kinect MAIN.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Kinect Extention/Kinect - local/Kinect MAIN.vi</Property>
+				<Property Name="Source[6].properties[0].type" Type="Str">Window behavior</Property>
+				<Property Name="Source[6].properties[0].value" Type="Str">Default</Property>
+				<Property Name="Source[6].properties[1].type" Type="Str">Allow user to close window</Property>
+				<Property Name="Source[6].properties[1].value" Type="Bool">true</Property>
+				<Property Name="Source[6].properties[2].type" Type="Str">Window run-time position</Property>
+				<Property Name="Source[6].properties[2].value" Type="Str">Unchanged</Property>
+				<Property Name="Source[6].properties[3].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[6].properties[3].value" Type="Bool">true</Property>
+				<Property Name="Source[6].propertiesCount" Type="Int">4</Property>
 				<Property Name="Source[6].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[6].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">7</Property>
@@ -309,7 +378,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BF5EB4CB-A56A-4BCD-9FE5-2CB52A4CD614}</Property>
-				<Property Name="Bld_version.build" Type="Int">12</Property>
+				<Property Name="Bld_version.build" Type="Int">15</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Sensor data visualisation.exe</Property>
@@ -407,7 +476,8 @@
 				<Property Name="INST_buildSpecName" Type="Str">My Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
 				<Property Name="INST_productName" Type="Str">AR.Drone LabVIEW Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">3.4.3</Property>
+				<Property Name="INST_productVersion" Type="Str">3.4.7</Property>
+				<Property Name="INST_readmeID" Type="Ref">/My Computer/README.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">14008036</Property>
 				<Property Name="MSI_arpCompany" Type="Str">National Instruments</Property>
@@ -434,7 +504,7 @@
 				<Property Name="Source[0].File[0].tag" Type="Str">{1DC22BCB-4F58-4EF0-953F-E2C438A5E135}</Property>
 				<Property Name="Source[0].File[1].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
 				<Property Name="Source[0].File[1].name" Type="Str">README.txt</Property>
-				<Property Name="Source[0].File[1].tag" Type="Ref">/My Computer/README.txt</Property>
+				<Property Name="Source[0].File[1].tag" Type="Ref"></Property>
 				<Property Name="Source[0].FileCount" Type="Int">1</Property>
 				<Property Name="Source[0].name" Type="Str">Controller</Property>
 				<Property Name="Source[0].tag" Type="Ref">/My Computer/Build Specifications/Controller</Property>
@@ -454,7 +524,7 @@
 				<Property Name="Source[2].attributes" Type="Int">1</Property>
 				<Property Name="Source[2].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
 				<Property Name="Source[2].name" Type="Str">README.txt</Property>
-				<Property Name="Source[2].tag" Type="Ref">/My Computer/README.txt</Property>
+				<Property Name="Source[2].tag" Type="Ref"></Property>
 				<Property Name="Source[2].type" Type="Str">File</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
