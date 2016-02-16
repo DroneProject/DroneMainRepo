@@ -9,7 +9,7 @@ to create a fully functional remote control for the Parrot AR.Drone 2.0 using La
 to implement autonomous behavior by processing the images coming from the drone's cameras.
 
 ####Specification
-- <a href="https://www.dropbox.com/s/dtis5fgdqgg10c3/Spec.docx?dl=0">Spec.docx</a>
+- <a href="https://www.dropbox.com/s/tufm1g0hxnmwfnx/spec.docx?dl=0">Spec.docx</a>
 
 ####Trello Board
 - https://trello.com/b/WZzVkUko/drone-project
