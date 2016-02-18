@@ -1,37 +1,27 @@
-﻿
-
-
-AR.Drone Controller
+﻿AR.Drone Controller
 Copyright (C) 2015 National Instruments
 
-Contact person: Gergo Papp-Szentannai (gergo.papp-szentannai@ni.com)
-
-
-
-
+Contact person: Gergő Papp-Szentannai (gergo.papp-szentannai@ni.com)
 Description
 
-	This project has two main goals: to create a fully functional remote control for the Parrot AR.Drone 2.0 using LabVIEW. to implement autonomous behavior by processing the images coming from the drone's cameras.
-
-	
-	
+	This project has two main goals:
+1. To create a fully functional remote control for the Parrot AR.Drone 2.0 using LabVIEW.
+2. To implement autonomous behavior by processing the images coming from the drone's cameras.
 Specification
 
-	Spec.docx - https://www.dropbox.com/s/dtis5fgdqgg10c3/Spec.docx?dl=0
-	Trello Board - https://trello.com/b/WZzVkUko/drone-project
-
-
+• Spec.docx
+• Trello Board
 	
 Requirements:
 
-	(Software)
-		1.LabVIEW 2014 or higher (tested in LabVIEW 2014 and 2014 SP1)
-		2.LabVIEW Vision Development Module 2015
-		3.AR.Drone Toolkit - Beta version (1.0.36)
-		4.Makerhub Toolbox (available for free in VIPM)
+(Software)
+1. LabVIEW 2014 or higher (tested in LabVIEW 2014 and 2014 SP1)
+2. LabVIEW Vision Development Module 2015
+3. AR.Drone Toolkit - Beta version (1.0.36)
+4. Makerhub Toolbox (available for free in VIPM)
 	*These are automatically installed if you use the installer. Otherwise you have to manually install them.
 		
-	(Hardware)
+(Hardware)
 		1.PC running on Windows 7 or higher (tested on Win10 and Win7)
 		2.WiFi connectivity
 		3.Xbox 360 Controller* (we used a PS3 Controller using an emulator) - you have to install the proper drivers!
@@ -53,7 +43,8 @@ Instructions
 		- the Adjustments panel and the Reset OCR button are specific to some Secondary VIs, therefore they don't need to be touched at the moment
 	6.Select Secondary VI - this VI will run in the background and will manage the video processing and some features of the Autonomous flight
 	
-		Secondary VI Name:							|	Camera to use:
+		Secondary VI Name:
+							|	Camera to use:
 		------------------------------------------------------------------------+--------------------------------------------
 		Simple Video.vi								|	Front or Bottom Camera (your choice)
 		Auto Hovering with Position Prediction.vi				|	Bottom Camera
