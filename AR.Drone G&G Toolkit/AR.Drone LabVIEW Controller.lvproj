@@ -22,7 +22,9 @@
 		</Item>
 		<Item Name="Kinect Extention" Type="Folder">
 			<Item Name="Kinect - local" Type="Folder">
-				<Item Name="Kinect MAIN.vi" Type="VI" URL="../Source/Kinect Extention/Kinect MAIN.vi"/>
+				<Item Name="Fit Roll Axis(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Fit Roll Axis(SubVI).vi"/>
+				<Item Name="Fit Pitch Axis(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Fit Pitch Axis(SubVI).vi"/>
+				<Item Name="Pitch and Roll (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Pitch and Roll (SubVI).vi"/>
 				<Item Name="Kinect - Hover (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Hover (SubVI).vi"/>
 				<Item Name="Kinect - Weak detect (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Weak detect (SubVI).vi"/>
 				<Item Name="Kinect - Control Cluster (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Control Cluster (SubVI).vi"/>
@@ -35,6 +37,7 @@
 				<Item Name="Set Cluster variables(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Set Cluster variables(SubVI).vi"/>
 			</Item>
 			<Item Name="Kinect Global.vi" Type="VI" URL="../Source/Kinect Extention/Kinect Global.vi"/>
+			<Item Name="Kinect MAIN.vi" Type="VI" URL="../Source/Kinect Extention/Kinect MAIN.vi"/>
 		</Item>
 		<Item Name="Resources" Type="Folder">
 			<Item Name="Auto Hovering with Position Prediction" Type="Folder">
@@ -246,7 +249,6 @@
 				<Item Name="Close-Skeleton and Video.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Skeleton and Video.vi"/>
 				<Item Name="Close-Skeleton.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Skeleton.vi"/>
 				<Item Name="Close-Video.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Video.vi"/>
-				<Item Name="Angle Between Joints.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Angle Between Joints.vi"/>
 				<Item Name="Decode20Video.dll" Type="Document" URL="/&lt;vilib&gt;/LVH/AR Drone Toolkit/Decode Video/2.0/Decode20Video.dll"/>
 				<Item Name="Display Colour Data (U32 to picture).vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Display Colour Data (U32 to picture).vi"/>
 				<Item Name="Joint Coordinates.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Joint Coordinates.vi"/>
@@ -344,7 +346,7 @@
 				<Property Name="Source[5].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[5].type" Type="Str">VI</Property>
 				<Property Name="Source[6].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Kinect Extention/Kinect - local/Kinect MAIN.vi</Property>
+				<Property Name="Source[6].itemID" Type="Ref">/My Computer/Kinect Extention/Kinect MAIN.vi</Property>
 				<Property Name="Source[6].properties[0].type" Type="Str">Window behavior</Property>
 				<Property Name="Source[6].properties[0].value" Type="Str">Default</Property>
 				<Property Name="Source[6].properties[1].type" Type="Str">Allow user to close window</Property>
