@@ -114,6 +114,7 @@
 		<Item Name="Sensor data visualisation.vi" Type="VI" URL="../Source/Other VIs/Sensor data visualisation.vi"/>
 		<Item Name="AR.Drone MAIN.vi" Type="VI" URL="../Source/AR.Drone MAIN.vi"/>
 		<Item Name="README.rtf" Type="Document" URL="../Source/README.rtf"/>
+		<Item Name="Fit Yaw Axis(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Fit Yaw Axis(SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3DPC_SurfacePlot.xctl" Type="XControl" URL="/&lt;vilib&gt;/Native 3D Graph/xcontrol/3DPC_SurfacePlot.xctl"/>
