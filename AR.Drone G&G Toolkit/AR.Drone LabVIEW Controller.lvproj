@@ -29,6 +29,8 @@
 				<Item Name="Kinect - Weak detect (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Weak detect (SubVI).vi"/>
 				<Item Name="Kinect - Control Cluster (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Control Cluster (SubVI).vi"/>
 				<Item Name="Kinect - Land (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Kinect - Land (SubVI).vi"/>
+				<Item Name="Fit Yaw Axis(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Fit Yaw Axis(SubVI).vi"/>
+				<Item Name="Set 0(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Set 0(SubVI).vi"/>
 			</Item>
 			<Item Name="Kinect - integration" Type="Folder">
 				<Item Name="Land or Take Off(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Land or Take Off(SubVI).vi"/>
@@ -114,7 +116,6 @@
 		<Item Name="Sensor data visualisation.vi" Type="VI" URL="../Source/Other VIs/Sensor data visualisation.vi"/>
 		<Item Name="AR.Drone MAIN.vi" Type="VI" URL="../Source/AR.Drone MAIN.vi"/>
 		<Item Name="README.rtf" Type="Document" URL="../Source/README.rtf"/>
-		<Item Name="Fit Yaw Axis(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Fit Yaw Axis(SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="3DPC_SurfacePlot.xctl" Type="XControl" URL="/&lt;vilib&gt;/Native 3D Graph/xcontrol/3DPC_SurfacePlot.xctl"/>
