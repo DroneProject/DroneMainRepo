@@ -215,9 +215,6 @@
 				<Item Name="Write BMP Data.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP Data.vi"/>
 				<Item Name="Write BMP File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/bmp.llb/Write BMP File.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
-				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
-				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
-				<Item Name="LMH-Toolbox.lvlib" Type="Library" URL="/&lt;vilib&gt;/MakerHub/Toolbox/LMH-Toolbox.lvlib"/>
 				<Item Name="Initialise.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Initialise.vi"/>
 				<Item Name="Configure.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Configure.vi"/>
 				<Item Name="Event-Depth and Skeleton.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Configure/Event-Depth and Skeleton.vi"/>
@@ -255,6 +252,7 @@
 				<Item Name="Display Colour Data (U32 to picture).vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Display Colour Data (U32 to picture).vi"/>
 				<Item Name="Joint Coordinates.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Joint Coordinates.vi"/>
 				<Item Name="Decode20Video.dll" Type="Document" URL="/&lt;vilib&gt;/LVH/AR Drone Toolkit/Decode Video/2.0/Decode20Video.dll"/>
+				<Item Name="Create Folder If DNE.vi" Type="VI" URL="/&lt;vilib&gt;/MakerHub/Toolbox/Public/System/Create Folder If DNE.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
