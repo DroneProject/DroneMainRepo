@@ -32,6 +32,7 @@
 				<Item Name="Fit Yaw Axis(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Fit Yaw Axis(SubVI).vi"/>
 				<Item Name="Set 0(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Set 0(SubVI).vi"/>
 				<Item Name="Vertical speed (SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Vertical speed (SubVI).vi"/>
+				<Item Name="Compute controls(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Compute controls(SubVI).vi"/>
 			</Item>
 			<Item Name="Kinect - integration" Type="Folder">
 				<Item Name="Land or Take Off(SubVI).vi" Type="VI" URL="../Source/Kinect Extention/Land or Take Off(SubVI).vi"/>
@@ -254,7 +255,7 @@
 				<Item Name="Close-Video.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/_Polymorphic Close/Close-Video.vi"/>
 				<Item Name="Display Colour Data (U32 to picture).vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Display Colour Data (U32 to picture).vi"/>
 				<Item Name="Joint Coordinates.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Joint Coordinates.vi"/>
-				<Item Name="Decode20Video.dll" Type="Document" URL="/&lt;vilib&gt;/LVH/AR Drone Toolkit/Decode Video/2.0/Decode20Video.dll"/>
+				<Item Name="Angle Between Joints.vi" Type="VI" URL="/&lt;vilib&gt;/University of Leeds/Kinesthesia Toolkit for Microsoft Kinect/Additional VIs/Angle Between Joints.vi"/>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
