@@ -278,7 +278,6 @@
 				<Property Name="App_INI_aliasGUID" Type="Str">{85C3762F-C631-4E8A-B318-C440BC3F6B4C}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{19AE53D9-A3FE-4A04-91F4-3B77849E737A}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{F98CCFA5-5CAB-457C-A6E7-631FFCBC805F}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">Controller</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
@@ -288,9 +287,9 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{80B54CC1-7483-4F82-A9D9-FA0F62C5D2E5}</Property>
-				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">4</Property>
 				<Property Name="Bld_version.minor" Type="Int">4</Property>
+				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">AR.Drone Controller.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Controller/AR.Drone Controller.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
@@ -298,12 +297,12 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Controller/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{2C0E0258-186F-48AA-940A-E092628BB02F}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{43C0EB72-F860-4C13-A97E-29BC7CA02FBE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/AR.Drone MAIN.vi</Property>
 				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
-				<Property Name="Source[1].properties[0].value" Type="Bool">true</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[1].properties[1].type" Type="Str">Window run-time position</Property>
 				<Property Name="Source[1].properties[1].value" Type="Str">Unchanged</Property>
 				<Property Name="Source[1].properties[10].type" Type="Str">Show fp when called</Property>
@@ -365,7 +364,7 @@
 				<Property Name="SourceCount" Type="Int">7</Property>
 				<Property Name="TgtF_companyName" Type="Str">National Instruments</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">LabVIEW AR.Drone 2.0 Controller</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">LabVIEW AR.Drone 2.0 Controller with Kinect Extention</Property>
 				<Property Name="TgtF_internalName" Type="Str">Controller</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2015 National Instruments</Property>
 				<Property Name="TgtF_productName" Type="Str">Controller with Kinect Extention</Property>
@@ -387,7 +386,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{BF5EB4CB-A56A-4BCD-9FE5-2CB52A4CD614}</Property>
-				<Property Name="Bld_version.build" Type="Int">16</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Bld_version.patch" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Sensor data visualisation.exe</Property>
@@ -397,10 +396,13 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Sensor_specs/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DE34867F-7AD8-47FE-BEF0-DEA295161ABD}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{43C0EB72-F860-4C13-A97E-29BC7CA02FBE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Sensor data visualisation.vi</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Run when opened</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
@@ -479,13 +481,12 @@
 				<Property Name="DistPart[2].upgradeCode" Type="Str">{4722F14B-8434-468D-840D-2B0CD8CBD5EA}</Property>
 				<Property Name="DistPartCount" Type="Int">3</Property>
 				<Property Name="INST_author" Type="Str">National Instruments</Property>
-				<Property Name="INST_autoIncrement" Type="Bool">true</Property>
 				<Property Name="INST_buildLocation" Type="Path">../builds/AR.Drone LabVIEW Controller/My Installer</Property>
 				<Property Name="INST_buildLocation.type" Type="Str">relativeToCommon</Property>
 				<Property Name="INST_buildSpecName" Type="Str">My Installer</Property>
 				<Property Name="INST_defaultDir" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
 				<Property Name="INST_productName" Type="Str">AR.Drone LabVIEW Controller</Property>
-				<Property Name="INST_productVersion" Type="Str">3.4.8</Property>
+				<Property Name="INST_productVersion" Type="Str">4.0.0</Property>
 				<Property Name="INST_readmeID" Type="Ref">/My Computer/README.rtf</Property>
 				<Property Name="InstSpecBitness" Type="Str">32-bit</Property>
 				<Property Name="InstSpecVersion" Type="Str">14008036</Property>
@@ -530,12 +531,7 @@
 				<Property Name="Source[1].name" Type="Str">Sensor_specs</Property>
 				<Property Name="Source[1].tag" Type="Ref">/My Computer/Build Specifications/Sensor_specs</Property>
 				<Property Name="Source[1].type" Type="Str">EXE</Property>
-				<Property Name="Source[2].attributes" Type="Int">1</Property>
-				<Property Name="Source[2].dest" Type="Str">{19700058-BAE5-4FAA-9A62-3B5936B13BC1}</Property>
-				<Property Name="Source[2].name" Type="Str">README.txt</Property>
-				<Property Name="Source[2].tag" Type="Ref"></Property>
-				<Property Name="Source[2].type" Type="Str">File</Property>
-				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
 			</Item>
 		</Item>
 	</Item>
