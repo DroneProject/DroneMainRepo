@@ -2,27 +2,38 @@
 ###LabVIEW Drone Project 2015
 
 
+### Project Team Members
+- Papp-Szentannai Gergő
+- Kovács Gellért
 
-##Description
+### Demo videos
+<ul>
+<li><a href="http://www.youtube.com/watch?v=VW7FCKOND3c">Full demo video</a>​</li>
+<li><a href="https://www.youtube.com/watch?v=XA508uYLoWA">Simple demo</a>​</li>
+<li><a href="http://www.youtube.com/watch?v=MN7B-gMkJrs" style="text-decoration: underline;">OCR Control</a></li>
+</ul>
+
+
+## Description
 This project has two main goals:
 to create a fully functional remote control for the Parrot AR.Drone 2.0 using LabVIEW.
 to implement autonomous behavior by processing the images coming from the drone's cameras.
 
-####Specification
+#### Specification
 - <a href="https://www.dropbox.com/s/tufm1g0hxnmwfnx/spec.docx?dl=0">Spec.docx</a>
 
-####Trello Board
+#### Trello Board
 - https://trello.com/b/WZzVkUko/drone-project
 
 
 
-##Requirements:
-###(Software)
+## Requirements:
+### (Software)
   1. LabVIEW 2014 or higher (tested in LabVIEW 2014 and 2014 SP1)
   2. LabVIEW Vision Development Module 2015
   3. AR.Drone Toolkit - Beta version (1.0.36)
 
-###(Hardware)
+### (Hardware)
   1. PC running on Windows 7 or higher (tested on Win10 and Win7)
   2. WiFi connectivity
   3. Xbox 360 Controller* (we used a PS3 Controller using an emulator) - you have to install the proper drivers!
@@ -31,7 +42,7 @@ to implement autonomous behavior by processing the images coming from the drone'
 
 
 
-##Instructions
+## Instructions
   1. Connect to your AR.Drone from your OS over WiFi (same as connecting to a public hotspot); the drone will have the name ardrone-123456 or similar.
   2. Plug in the Xbox 360 controller, wait for it to be fully recognized.
   3. Open the AR.Drone LabVIEW Controller.lvproj
@@ -65,7 +76,7 @@ to implement autonomous behavior by processing the images coming from the drone'
 </table>
   7. Run MAIN.vi
 
-###To be checked before take-off:
+### To be checked before take-off:
   1. After you run the MAIN.vi you should head over to the Debug&Test Info tab and check the following:
     - Loop Iteration should be increasing fast
     - Successful Drone Setup, Successful Controller Setup and Loop error (Ctr & Nav) should all be GREEN.
@@ -78,22 +89,22 @@ to implement autonomous behavior by processing the images coming from the drone'
   5. Check the Battery Remaining indicator. The drone won't take off if the battery level is below 15%.
   6. The Manual button should be active (bright green) and the switch should be in the correct position (Controller or Keyboard, depending on your setup).
 
-###Controlling the drone in Manual mode:
-####1. With an Xbox 360 controller
+### Controlling the drone in Manual mode:
+#### 1. With an Xbox 360 controller
 - the left joystick (5) is used to control the tilting of the drone (in the MAIN.vi these two axes appear as Pitch and Roll)
 - the right joystick (6) controls the rotation in one place (in the MAIN.vi it is called Yaw Speed)
 - the left and right triggers (1 and 2) are used to control the altitude (int the MAIN.vi Vertical Speed)
 - button A is for Take-off and Landing (press it once briefly for Take-off, press it again to Land)
 - button B is for Hovering (press and hold to enter Hover mode. While in Hover mode the drone does not react to any movement of the left joystick
 
-####2. With the Keyboard
+#### 2. With the Keyboard
 - keys W,A,S,D are used to control tilting of the drone (in the MAIN.vi these two axes appear as Pitch and Roll)
 - the arrow keys LEFT and RIGHT control the rotation in one place (in the MAIN.vi it is called Yaw Speed)
 - the arrow keys UP and DOWN control the altitude (int the MAIN.vi Vertical Speed)
 - key T is for Take-off and Landing (press it once briefly for Take-off, press it again to Land)
 - key H is for Hovering (press and hold to enter Hover mode. While in Hover mode the drone does not react to any the keys W,A,S,D)
 
-##Activate autonomous capabilities during flight:
+## Activate autonomous capabilities during flight:
 1. You must select the Secondary VI containing the image processing  before starting the MAIN.vi.
 2. After a successful take-off you can simply activate the desired feature by deactivating the Manual button (its color should become dark green).
 3. Don't forget that in Automatic mode you have almost no control over the movement of the drone.
@@ -102,7 +113,7 @@ to implement autonomous behavior by processing the images coming from the drone'
 
 
 
-####Available autonomous capabilities:
+#### Available autonomous capabilities:
 1. OCR Control
   - Navigate to the Black&White tab on the video panel.
   - The user can control the drone using the printed commands (UP, DOWN, LEFT, RIGHT, LAND)
@@ -121,7 +132,7 @@ to implement autonomous behavior by processing the images coming from the drone'
 
 
 
-##Known issues:
+## Known issues:
 1. The UDP connection sometimes fails - the drone might become uncontrollable for a few seconds
  - SOLUTION: Restart the MAIN.vi. If LabVIEW freezes, then forcibly close and restart LabVIEW as well. Someone should hold the drone in one place until the connection is reestablished, as its behavior cannot be anticipated in these situations.
 2. The video feed tends to stop unexpectedly and doesn't recover - control still works
@@ -130,16 +141,3 @@ to implement autonomous behavior by processing the images coming from the drone'
  - SOLUTION: This issue cannot be resolved by the user. All you can do is to simply ignore it, as it does not affect the functioning of any VI.
 4. The controller may not get recognized automatically by LabVIEW.
  - SOLUTION: Plug in the controller into another USB port. Make sure that Windows recognizes the controller (Control Panel >>> Hardware and Sound >>> View devices and printers). Restart the MAIN.vi. !
-
-
-
-###Project Team Members
-- Papp-Szentannai Gergő
-- Kovács Gellért
-
-###Demo videos
-<ul>
-<li><a href="http://www.youtube.com/watch?v=VW7FCKOND3c">Full demo video</a>​</li>
-<li><a href="https://www.youtube.com/watch?v=XA508uYLoWA">Simple demo</a>​</li>
-<li><a href="http://www.youtube.com/watch?v=MN7B-gMkJrs" style="text-decoration: underline;">OCR Control</a></li>
-</ul>
